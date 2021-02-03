@@ -56,20 +56,6 @@
           <div class="media-container-column col-lg-8" data-form-type="formoid">
             <!---Formbuilder Form--->
             <form class="mbr-form form-with-styler" data-form-title=" Form">
-              <div class="row">
-                <div
-                  hidden="hidden"
-                  data-form-alert=""
-                  class="alert alert-success col-12"
-                >
-                  Thanks for filling out the form!
-                </div>
-                <div
-                  hidden="hidden"
-                  data-form-alert-danger=""
-                  class="alert alert-danger col-12"
-                ></div>
-              </div>
               <div class="dragArea row">
                 <div class="col-md-4 form-group" data-for="word">
                   <input
@@ -110,1020 +96,1021 @@
     </section>
 
     <script>
-      const wordList = `0   ordem inglês pronúncia português,
-   1   the [dhâ] o,a,os,as,
-   2   of [âv] de,
-   3   to [tuu] para,
-   4   and [énd] e,
-   5   a [â] um,uma,
-   6   in [ên] em,dentro,
-   7   is [ês] é,
-   8   it [êt] este,
-   9   you [yuu] você,
-   10  that [dhét] que,aquele,
-   11  he [rrii] ele,
-   12  was [uós] era,estava,
-   13  for [fór] por,para,
-   14  on [ón] em,
-   15  are [ar] são,estão,
-   16  with [uêdh] com,
-   17  as [és] como,enquanto,
-   18  I [ai] eu,
-   19  his [rrês] seu,
-   20  they [dhei] eles,
-   21  be [bii] ser,estar,
-   22  at [ét] em,
-   23  one [uân] um,
-   24  have [rrév] ter,
-   25  this [dhês] este,
-   26  from [frâm] de,
-   27  or [ór] ou,
-   28  had [rréd] tinha,
-   29  by [bai] por,em,
-   30  hot [rrat] quente,
-   31  word [uâd] palavra,
-   32  but [bât] mas,
-   33  what [uót] o-que,
-   34  some [sâm] algum,
-   35  we [uii] nós,
-   36  can [kén] pode,lata,
-   37  out [aut] fora,
-   38  other [âdhâr] outro,
-   39  were [uâr] eram,esavam,
-   40  all [ól] todo,
-   41  there [thér] lá,
-   42  when [uen] quando,
-   43  up [âp] para-cima,
-   44  use [iuz] usar,
-   45  your [yór] seu,
-   46  how [rráu] como,quão,
-   47  said [séd] disse,
-   48  an [én] um,uma,
-   49  each [iich] cada,
-   50  she [shii] ela,
-   51  which [uêtch] qual,
-   52  do [duu] fazer,mesmo,
-   53  their [thér] seus,
-   54  time [taim] tempo,hora,
-   55  if [êf] se,
-   56  will [uêl] vai,vontade,
-   57  way [uei] caminho,jeito,
-   58  about [âbaut] sobre,quase,
-   59  many [méni] muitos,
-   60  then [dhên] então,
-   61  them [dhêm] deles,
-   62  write [rait] escrever,
-   63  would [uôd] deveria,
-   64  like [laik] como,gostar,
-   65  so [sôu] assim,tão,
-   66  these [dhiiz] estes,
-   67  her [rrâr] dela,
-   68  long [lóng] longo,
-   69  make [meik] fazer,
-   70  thing [thêng] coisa,
-   71  see [sii] ver,
-   72  him [rrêm] dele,
-   73  two [tuu] dois,duas,
-   74  has [rrés] tem,
-   75  look [lôk] olhar,
-   76  more [mór] mais,
-   77  day [dei] dia,
-   78  could [côd] poderia,
-   79  go [gôu] ir,
-   80  come [câm] vir,
-   81  did [dêd] fez,mesmo,
-   82  number [nâmbâr] número,
-   83  sound [saund] som,
-   84  no [nou] não,
-   85  most [moust] mais,maior,
-   86  people [piipâl] pessoas,povo,
-   87  my [mai] meu,
-   88  over [ouvâr] sobre,acima-de,
-   89  know [nou] saber,
-   90  water [uóttâr] água,
-   91  than [dhén] que,
-   92  call [cól] chamar,
-   93  first [fârst] primeiro,
-   94  who [rruu] que,
-   95  may [mei] maio,pode,
-   96  down [daun] baixo,
-   97  side [said] lado,
-   98  been [bên] sido,estado,
-   99  now [nau] agora,
-   100 find [faind] encontrar,
-   101 any [éni] qualquer,
-   102 new [nuu] novo,
-   103 work [uârk] trabalho,
-   104 part [part] parte,
-   105 take [teik] pegar,
-   106 get [ghét] ficar,
-   107 place [pleis] lugar,
-   108 made [meid] feito,
-   109 live [lêv,laiv] viver,vivo,
-   110 where [uér] onde,
-   111 after [éftâr] após,
-   112 back [bék] atrás,costas,
-   113 little [lêttâl] pequeno,pouco,
-   114 only [ounli] somente,
-   115 round [raund] redondo,rodada,
-   116 man [mén] homem,
-   117 year [yiir] ano,
-   118 came [keim] chegado,
-   119 show [shou] mostrar,
-   120 every [evri] cada,
-   121 good [gôd] bom,
-   122 me [mii] me,eu,
-   123 give [ghêv] dar,
-   124 our [ar] nosso,
-   125 under [ândâr] sob,
-   126 name [neim] nome,
-   127 very [véri] muito,absoluto,
-   128 through [thruu] através-de,
-   129 just [jâst] justo,só,
-   130 form [fórm] forma,formulário,
-   131 sentence [sêntâns] sentença,
-   132 great [greit] grande,
-   133 think [thênk] pensar,
-   134 say [sei] dizer,
-   135 help [rrêlp] ajudar,
-   136 low [lou] baixo,
-   137 line [lain] linha,fila,
-   138 differ [dêfâr] diferir,
-   139 turn [târn] tornar,vez,
-   140 cause [cóz] causa,
-   141 much [mâtch] muito,
-   142 mean [miin] meio,significar,
-   143 before [bêfór] antes,
-   144 move [muuv] movimento,
-   145 right [rait] direito,
-   146 boy [bói] garoto,
-   147 old [ould] velho,
-   148 too [tuu] também,
-   149 same [seim] mesmo,
-   150 tell [têl] contar,
-   151 does [dâz] faz,mesmo,
-   152 set [sêt] conjunto,fixar,
-   153 three [thrii] três,
-   154 want [uânt] querer,
-   155 air [ér] ar,
-   156 well [uel] bem,poço,
-   157 also [ólsou] também,
-   158 play [plei] peça,tocar,
-   159 small [smól] pequeno,
-   160 end [ênd] fim,finalizar,
-   161 put [pôt] por,
-   162 home [rroum] casa,
-   163 read [riid] ler,lido,
-   164 hand [rrénd] mão,
-   165 port [pórt] porto,
-   166 large [larj] grande,
-   167 spell [spêl] soletrar,encanto,
-   168 add [éd] adicionar,
-   169 even [iivân] mesmo,
-   170 land [lénd] terra,
-   171 here [rriir] aqui,
-   172 must [mâst] dever,
-   173 big [bêg] grande,
-   174 high [rrai] alto,
-   175 such [sâtch] tal,
-   176 follow [falou] seguir,
-   177 act [ékt] ato,agir,
-   178 why [uai] por-que,
-   179 ask [ésk] pedir,perguntar,
-   180 men [mên] homens,
-   181 change [tcheinj] mudar,
-   182 went [uent] foi,
-   183 light [lait] leve,luz,
-   184 kind [kaind] bom,tipo,
-   185 off [óf] por,desligado,
-   186 need [niid] precisar,
-   187 house [rraus] casa,
-   188 picture [pêktchâr] foto,filme,
-   189 try [trai] tentar,
-   190 us [âs] nos,
-   191 again [âghein] de-novo,
-   192 animal [énâmâl] animal,
-   193 point [point] ponto,
-   194 mother [mâdhâr] mãe,
-   195 world [uârld] mundo,
-   196 near [niir] perto,
-   197 build [bêld] construir,
-   198 self [self] próprio,ego,
-   199 earth [ârth] terra,
-   200 father [fódhâr] pai,
-   201 head [rred] cabeça,
-   202 stand [sténd] permanecer,de-pé,banca,
-   203 own [oun] próprio,
-   204 page [peij] página,
-   205 should [shôd] deveria,
-   206 country [cântri] país,
-   207 found [faund] encontrado,fundar,
-   208 answer [énsâr] resposta,
-   209 school [skool] escola,
-   210 grow [grou] crescer,
-   211 study [stâdi] estudo,
-   212 still [stêl] até,calmo,
-   213 learn [lârn] aprender,
-   214 plant [plént] planta,fábrica,
-   215 cover [câvâr] cobrir,
-   216 food [fuud] comida,
-   217 sun [sân] sol,
-   218 four [fór] quatro,
-   219 between [bituiin] entre,
-   220 state [steit] estado,
-   221 keep [kiip] guardar,
-   222 eye [ai] olho,
-   223 never [nevâr] nunca,
-   224 last [lést] último,durar,
-   225 let [let] deixar,
-   226 thought [thót] pensamento,pensado,
-   227 city [cêtti] cidade,
-   228 tree [trii] árvore,
-   229 cross [crós] cruz,cruzar,
-   230 farm [farm] fazenda,
-   231 hard [rrard] duro,
-   232 start [start] começar,
-   233 might [mait] poder,poderia,
-   234 story [stóri] estória,andar(prédio),
-   235 saw [só] viu,serra,
-   236 far [far] longe,
-   237 sea [sii] mar,
-   238 draw [dró] arrastar,empate,
-   239 left [left] esquerda,deixado,
-   240 late [leit] tarde,
-   241 run [rân] correr,
-   242 don't [dount] não,
-   243 while [uail] enquanto,
-   244 press [pres] pressão,imprensa,
-   245 close [clous] fechar,
-   246 night [nait] noite,
-   247 real [riil] real,
-   248 life [laif] vida,
-   249 few [fiu] alguns,
-   250 north [nórth] norte,
-   251 open [oupân] aberto,
-   252 seem [siim] parecer,
-   253 together [tâghedhâr] juntos,
-   254 next [next] próximo,
-   255 white [uait] branco,
-   256 children [tchêldrân] crianças,
-   257 begin [bêghên] começar,
-   258 got [gat] ficado,
-   259 walk [uók] andar,
-   260 example [igzémpâl] exemplo,
-   261 ease [iiz] facilitar,
-   262 paper [peipâr] papel,
-   263 group [grup] grupo,
-   264 always [óluêz] sempre,
-   265 music [miuzêk] música,
-   266 those [dhouz] aqueles,
-   267 both [bouth] ambos,
-   268 mark [mark] marcar,
-   269 often [ófân] muitas-vezes,
-   270 letter [lettâr] letra,carta,
-   271 until [ântêl] até,
-   272 mile [mail] milha,
-   273 river [rêvâr] rio,
-   274 car [car] carro,
-   275 feet [fiit] pés,
-   276 care [kér] cuidado,
-   277 second [secând] segundo,
-   278 book [bôk] livro,
-   279 carry [kéri] carregar,
-   280 took [tôk] pego,
-   281 science [sains] ciência,
-   282 eat [iit] comer,
-   283 room [ruum] cômodo,quarto,
-   284 friend [frend] amigo,
-   285 began [bêgén] começado,
-   286 idea [aidiia] idéia,
-   287 fish [fêsh] peixe,pescar,
-   288 mountain [mauntân] montanha,
-   289 stop [stap] parar,
-   290 once [uâns] uma-vez,
-   291 base [beis] base,
-   292 hear [rriir] ouvir,
-   293 horse [rrórs] cavalo,
-   294 cut [cât] cortar,
-   295 sure [shôr] certo,
-   296 watch [uótch] assistir,relógio,
-   297 color [câlâr] cor,colorir,
-   298 face [feis] rosto,
-   299 wood [uôd] madeira,
-   300 main [mein] principal,
-   301 enough [inâf] bastante,
-   302 plain [plein] plano,simples,
-   303 girl [gârl] garota,
-   304 usual [iuzhuâl] usual,comum,
-   305 young [yâng] jovem,
-   306 ready [riidi] pronto,
-   307 above [âbâv] acima,
-   308 ever [evâr] sempre,já,
-   309 red [red] vermelho,
-   310 list [lêst] lista,
-   311 though [thou] apesar-de,
-   312 feel [fiiól] sentir,sentimendo,
-   313 talk [tók] conversar,
-   314 bird [bârd] pássaro,
-   315 soon [suun] logo,
-   316 body [baddi] corpo,
-   317 dog [dóg] cachorro,
-   318 family [fémâli] família,
-   319 direct [dârekt] direto,
-   320 pose [pouz] posição,
-   321 leave [liiv] deixar,
-   322 song [sóng] canção,
-   323 measure [mejâr] medida,
-   324 door [dór] porta,
-   325 product [pradâkt] produto,
-   326 black [blék] negro,
-   327 short [shórt] curto,
-   328 numeral [nuumârâl] numeral,
-   329 class [clés] classe,
-   330 wind [uênd] vento,
-   331 question [quéschân] questão,pergunta,
-   332 happen [rrépân] acontecer,
-   333 complete [câmpliit] completo,
-   334 ship [shêp] navio,embarcar,
-   335 area [ériiâ] área,
-   336 half [rréf] metade,
-   337 rock [rak] roque,rocha,
-   338 order [órdâr] ordem,pedido,
-   339 fire [fair] fogo,incêndio,despedir,
-   340 south [sauth] sul,
-   341 problem [prablâm] problema,
-   342 piece [piis] peça,pedaço,
-   343 told [tould] contado,
-   344 knew [nuu] sabido,
-   345 pass [pés] passar,
-   346 since [sêns] desde,
-   347 top [tap] topo,principal,
-   348 whole [rroul] inteiro,
-   349 king [kêng] rei,
-   350 space [speis] espaço,
-   351 heard [rrârd] ouvido,
-   352 best [best] melhor,
-   353 hour [aur] hora,
-   354 better [bettâr] melhor,
-   355 true [truu] verdadeiro,
-   356 during [duurêng] durante,
-   357 hundred [rrândrâd] cem,
-   358 five [faiv] cinco,
-   359 remember [rimembâr] lembrar,
-   360 step [step] passo,
-   361 early [ârli] cedo,
-   362 hold [rrould] guardar,
-   363 west [uest] oeste,
-   364 ground [graund] terra,amolado,
-   365 interest [êntrâst] interesse,juros,
-   366 reach [riitch] alcançar,
-   367 fast [fést] rápido,
-   368 verb [vârb] verbo,
-   369 sing [sêng] cantar,
-   370 listen [lêssân] ouvir,
-   371 six [sêks] seis,
-   372 table [teibâl] mesa,tabela,
-   373 travel [trévâl] viajar,
-   374 less [les] menos,
-   375 morning [mórnên] manhã,
-   376 ten [ten] dez,
-   377 simple [sêmpâl] simples,
-   378 several [sevrâl] vários,
-   379 vowel [vaul] vogal,
-   380 toward [tuuard] para,
-   381 war [uar] guerra,
-   382 lay [lei] deitar,amador,
-   383 against [âghenst] contra,
-   384 pattern [péttârn] padrão,
-   385 slow [slou] devagar,
-   386 center [centâr] centro,
-   387 love [lâv] amor,amar,
-   388 person [pârsân] pessoa,
-   389 money [mâni] dinheiro,
-   390 serve [sârv] servir,
-   391 appear [âpiir] aparecer,
-   392 road [roud] estrada,
-   393 map [mép] mapa,
-   394 rain [rein] chuva,
-   395 rule [ruul] régua,regra,
-   396 govern [gâvârn] governar,
-   397 pull [pôl] puxar,
-   398 cold [could] frio,
-   399 notice [nottâs] aviso,
-   400 voice [vois] voz,
-   401 unit [iunât] unidade,
-   402 power [pauâr] poder,força,
-   403 town [taun] municipal,
-   404 fine [fain] bom,excelente,
-   405 certain [sârtân] certo,
-   406 fly [flai] voar,mosca,
-   407 fall [fól] cair,queda,outono,
-   408 lead [liid] levar,chumbo,
-   409 cry [crai] choro,chorar,
-   410 dark [dark] escuro,
-   411 machine [mâshiin] máquina,
-   412 note [nout] anotar,
-   413 wait [ueit] esperar,
-   414 plan [plén] plano,
-   415 figure [fêghiâr] figura,imaginar,
-   416 star [star] estrela,
-   417 box [baks] caixa,
-   418 noun [naun] substantivo,
-   419 field [fiild] campo,
-   420 rest [rest] resto,descanso,
-   421 correct [cârekt] correto,
-   422 able [eibâl] capaz,
-   423 pound [paund] libra,
-   424 done [dân] feito,
-   425 beauty [biutti] beleza,
-   426 drive [draiv] direção,dirigir,
-   427 stood [stud] permanecido,
-   428 contain [cântein] conter,
-   429 front [frânt] frente,
-   430 teach [tiitch] ensinar,
-   431 week [uiik] semana,
-   432 final [fainâl] final,
-   433 gave [gheiv] dado,
-   434 green [griin] verde,
-   435 oh [ou] ó,
-   436 quick [quêk] rápido,
-   437 develop [dêvelâp] desenvolver,
-   438 ocean [oushân] oceano,
-   439 warm [uórm] quente,
-   440 free [frii] livre,grátis,
-   441 minute [mênât] minuto,
-   442 strong [stróng] forte,
-   443 special [speshâl] especial,
-   444 mind [maind] mente,importar-se,
-   445 behind [bêrraind] atrás,
-   446 clear [cliir] claro,
-   447 tail [teil] rabo,
-   448 produce [prâdus] produção,
-   449 fact [fékt] fato,
-   450 street [striit] rua,
-   451 inch [êntch] polegada,
-   452 multiply [mâltâplai] multiplicar,
-   453 nothing [nâthêng] nada,
-   454 course [córs] curso,
-   455 stay [stei] ficar,
-   456 wheel [uiil] roda,
-   457 full [fôl] cheio,
-   458 force [fórs] força,forçar,
-   459 blue [bluu] azul,
-   460 object [âbjêkt] objeto,
-   461 decide [dêsaid] decidir,
-   462 surface [sârfâs] superficie,
-   463 deep [diip] profundo,
-   464 moon [muun] lua,
-   465 island [ailând] ilha,
-   466 foot [fuut] pé,
-   467 system [sêstâm] sistema,
-   468 busy [bêzi] ocupado,
-   469 test [test] teste,
-   470 record [recârd] recorde,gravar,registro,
-   471 boat [bout] barco,
-   472 common [camân] comum,
-   473 gold [gould] ouro,
-   474 possible [pasâbâl] possível,
-   475 plane [plein] avião,
-   476 stead [sted] local,
-   477 dry [drai] seco,
-   478 wonder [uândâr] admirar,
-   479 laugh [léf] rir,
-   480 thousand [thauzând] mil,
-   481 ago [âgou] atrás,
-   482 ran [rén] corrido,
-   483 check [tchek] cheque,checagem,
-   484 game [gheim] jogo,
-   485 shape [sheip] forma,
-   486 equate [iiqueit] equacionar,
-  487 sight [sait] visão,
-   488 miss [mês] sentir,senhorita,
-   489 brought [brót] trazido,
-   490 heat [rriit] calor,
-   491 snow [snou] neve,
-   492 tire [tair] pneu,cansar,
-   493 bring [brêng] trazer,
-   494 yes [yes] sim,
-   495 distant [dêstânt] distante,
-   496 fill [fêl] encher,
-   497 east [iist] leste,
-   498 paint [peint] pintar,
-   499 language [lénguêj] língua,
-   500 among [âmâng] entre,
-   501 grand [grénd] grandioso,
-   502 ball [ból] bola,
-   503 yet [yet] ainda,já,
-   504 wave [ueiv] onda,
-   505 drop [drap] gota,
-   506 heart [rrórt] coração,
-   507 am [ém] sou,estou,
-   508 present [prezânt] presente,
-   509 heavy [rrevi] pesado,
-   510 dance [déns] dança,
-   511 engine [enjân] motor,
-   512 position [pâzêshãn] posição,
-   513 arm [arm] braço,
-   514 wide [uaid] amplo,
-   515 sail [seil] vela(navio),
-   516 material [mâtiiriâl] material,
-   517 size [saiz] tamanho,
-   518 vary [véri] variar,
-   519 settle [settâl] estabelecer,
-   520 speak [spiik] falar,
-   521 weight [ueit] peso,
-   522 general [jenral] general,geral,
-   523 ice [ais] gelo,
-   524 matter [méttâr] matéria,importar-se,
-   525 circle [sârkâl] círculo,
-   526 pair [pér] par,
-   527 include [ênclud] incluir,
-   528 divide [dêvaid] dividir,
-   529 syllable [sêlâbâl] sílaba,
-   530 felt [feólt] sentido,
-   531 perhaps [pârhépps] talvez,
-   532 pick [pêk] escolher,apanhar,
-   533 sudden [sâdân] imprevisto,
-   534 count [caunt] contar,contagem,conde,
-   535 square [squér] quadrado,praça,
-   536 reason [riizân] razão,
-   537 length [lenth] comprimento,
-   538 represent [reprêzent] representar,
-   539 art [art] arte,
-   540 subject [sâbjêkt] sujeito,assunto,
-   541 region [riijân] região,
-   542 energy [enârji] energia,
-   543 hunt [rrânt] caçar,
-   544 probable [prabâbâl] provável,
-   545 bed [bed] cama,
-   546 brother [brâdhâr] irmão,
-   547 egg [eg] ovo,
-   548 ride [raid] passeio,
-   549 cell [ceól] cela,célula,
-   550 believe [bêliiv] acreditar,
-   551 fraction [frécshân] fração,
-   552 forest [fórâst] floresta,
-   553 sit [sêt] sentar,
-   554 race [reis] raça,corrida,
-   555 window [uêndou] janela,
-   556 store [stór] armazém,
-   557 summer [sâmâr] verão,
-   558 train [trêin] trem,treinar,
-   559 sleep [sliip] dormir,
-   560 prove [pruuv] provar,
-   561 lone [loun] só,
-   562 leg [leg] perna,
-   563 exercise [eksârsaiz] exercício,
-   564 wall [uól] parede,
-   565 catch [kétch] pegar,
-   566 mount [maunt] monte,montar,
-   567 wish [uêsh] desejo,
-   568 sky [skai] céu,
-   569 board [bórd] quadro,
-   570 joy [jói] alegria,
-   571 winter [uênttâr] inverno,
-   572 sat [sét] sentado,
-   573 written [rêtân] escrito,
-   574 wild [uaild] selvagem,
-   575 instrument [ênstrâmânt] instrumento,
-   576 kept [kept] guardado,
-   577 glass [glés] vidro,
-   578 grass [grés] grama,
-   579 cow [cau] vaca,
-   580 job [jáb] trabalho,jó,
-   581 edge [ej] canto,
-   582 sign [sain] sinal,
-   583 visit [vêzât] visita,
-   584 past [pést] passado,
-   585 soft [saft] macio,
-   586 fun [fân] alegria,
-   587 bright [brait] claro,
-   588 gas [ghés] gás,gasolina,
-   589 weather [uedhâr] tempo,
-   590 month [mânt] mês,
-   591 million [mêliân] milhão,
-   592 bear [bér] urso,carregar,
-   593 finish [fênish] fim,finalizar,
-   594 happy [rrépi] feliz,
-   595 hope [rroup] esperança,
-   596 flower [flauâr] flor,
-   597 clothe [cloudh] vestir,
-   598 strange [streindj] estranho,
-   599 gone [gón] ido,
-   600 jump [jâmp] pular,
-   601 baby [beibi] bebê,
-   602 eight [eit] oito,
-   603 village [vêlâj] vila,
-   604 meet [miit] encontrar,
-   605 root [ruut] raiz,
-   606 buy [bai] comprar,
-   607 raise [reiz] levantar,
-   608 solve [soulv] resolver,
-   609 metal [mettâl] metal,
-   610 whether [uedhâr] se,
-   611 push [pôsh] empurrar,iniciativa,
-   612 seven [sevân] sete,
-   613 paragraph [pérâgréf] parágrafo,
-   614 third [thârd] terceiro,
-   615 shall [shél] vai,
-   616 held [rreld] guardado,
-   617 hair [rrér] cabelo,
-   618 describe [dêcraib] descrever,
-   619 cook [côk] cozinhar,
-   620 floor [flór] chão,derrotar,
-   621 either [aidhâr] um, ou outro, também,
-   622 result [rêzâlt] resultado,
-   623 burn [bârn] queimar,
-   624 hill [rrêl] colina,
-   625 safe [seif] seguro,cofre,
-   626 cat [két] gato,
-   627 century [centri] século,
-   628 consider [cânsêdâr] considerar,
-   629 type [taip] tipo,datilografar,
-   630 law [ló] lei,
-   631 bit [bêt] pouco,broca,
-   632 coast [coust] costa,litoral,
-   633 copy [capi] copiar,
-   634 phrase [freiz] frase,
-   635 silent [sailânt] silencio,
-   636 tall [tól] alto(pessoa),
-   637 sand [sénd] areia,
-   638 soil [sóil] solo,
-   639 roll [rôl] giro,lista,
-   640 temperature [temprâchâr] temperatura,
-   641 finger [fêngâr] dedo,
-   642 industry [êndâstri] indústria,
-   643 value [véliu] valor,
-   644 fight [fait] luta,
-   645 lie [lai] deitar,mentir,
-   646 beat [biit] bater,
-   647 excite [iksait] instigar,
-   648 natural [nétchârâl] natural,
-   649 view [viu] vista,
-   650 sense [sens] sentido,
-   651 ear [iir] orelha,espiga,
-   652 else [els] outro,
-   653 quite [quait] muito,
-   654 broke [brouk] quebrado,
-   655 case [keis] caso,embalagem,
-   656 middle [mêdâl] meio,
-   657 kill [kêl] matar,
-   658 son [sân] filho,
-   659 lake [leik] lago,
-   660 moment [moumânt] momento,
-   661 scale [skeil] escada,escala,escama,
-   662 loud [laud] alto(som),
-   663 spring [sprêng] primavera,mola,
-   664 observe [âbzârv] observar,
-   665 child [tchaild] criança,
-   666 straight [streit] reto,
-   667 consonant [cansânânt] consoante,
-   668 nation [neishân] nação,
-   669 dictionary [dêkshânâri] dicionário,
-   670 milk [mêlk] leite,
-   671 speed [spiid] velocidade,
-   672 method [méthâd] método,
-   673 organ [órgân] órgão,
-   674 pay [pei] pagar,
-   675 age [eij] idade,
-   676 section [sekshân] seção,
-   677 dress [dres] vestido,
-   678 cloud [claud] nuvem,
-   679 surprise [sârpraiz] surpresa,
-   680 quiet [quait] quieto,
-   681 stone [stoun] pedra,
-   682 tiny [taini] minúsculo,
-   683 climb [claim] escalar,
-   684 cool [cuul] frio,
-   685 design [dêzain] desenho,
-   686 poor [pôr] pobre,
-   687 lot [lót] muito,lote,
-   688 experiment [eksperâmânt] experimento,
-   689 bottom [battâm] baixo,
-   690 key [kii] chave,
-   691 iron [airn] ferro,
-   692 single [sêngâl] só,solteiro,
-   693 stick [stêk] vareta,fincar,
-   694 flat [flét] achatado,plano,
-   695 twenty [tuenti] vinte,
-   696 skin [skên] pele,
-   697 smile [smail] sorriso,
-   698 crease [criis] ruga,
-   699 hole [rroul] buraco,
-   700 trade [treid] comércio,
-   701 melody [melâdi] melodia,
-   702 trip [trêp] viajar,passeio,
-   703 office [afâs] escritório,função,
-   704 receive [riciiv] receber,
-   705 row [rou] remar,fila,
-   706 mouth [mauth] boca,
-   707 exact [igzéct] exato,
-   708 symbol [sêmbâl] símbol,
-   709 die [dai] morrer,
-   710 least [liist] menos,
-   711 trouble [trâbâl] preocupação,
-   712 shout [shaut] gritar,
-   713 except [êkscept] exceto,
-   714 wrote [rout] escrito,
-   715 seed [siid] semente,
-   716 tone [toun] tom,
-   717 join [join] juntar,
-   718 suggest [sâgjest] sugerir,
-   719 clean [cliin] limpo,
-   720 break [breik] quebrar,
-   721 lady [leidi] dama,
-   722 yard [yard] jarda,quintal,
-   723 rise [raiz] levantar,
-   724 bad [béd] mal,
-   725 blow [blou] assoprar,
-   726 oil [oil] óleo,petróleo,
-   727 blood [blâd] sangue,
-   728 touch [tâtch] tocar,
-   729 grew [gruu] crescido,
-   730 cent [cent] centavo,
-   731 mix [mêks] mistura,
-   732 team [tiim] grupo,
-   733 wire [uair] arame,
-   734 cost [cóst] custo,
-   735 lost [lóst] perdido,
-   736 brown [braun] marrom,
-   737 wear [uér] usar,
-   738 garden [gardân] jardim,
-   739 equal [iiquâl] igual,
-   740 sent [sent] enviado,
-   741 choose [tchuuz] escolher,
-   742 fell [fel] caido,
-   743 fit [fêt] ajustado,
-   744 flow [flou] correr,corrente,
-   745 fair [fér] feira,claro,
-   746 bank [bénk] banco,
-   747 collect [câlect] recolher,pagar,
-   748 save [seiv] salvar,
-   749 control [cântroul] controle,
-   750 decimal [dêsêmâl] decimal,
-   751 gentle [jentâl] gentil,
-   752 woman [uômân] mulher,
-   753 captain [képtân] capitão,
-   754 practice [précttâs] prática,
-   755 separate [sepârât] separado,
-   756 difficult [dêfêcâlt] difícil,
-   757 doctor [dactâr] doutor,
-   758 please [pliiz] por-favor,agradar,
-   759 protect [prâtect] proteger,
-   760 noon [nuun] meio-dia,
-   761 whose [rruuz] cujo,
-   762 locate [loukeit] localizar,
-   763 ring [rêng] anel,tocar,
-   764 character [kérêktâr] caráter,personagem,
-   765 insect [ênsect] inseto,
-   766 caught [cót] pego,
-   767 period [pêriiâd] período,
-   768 indicate [êndêkeit] indicar,
-   769 radio [reidiiou] rádio,
-   770 spoke [spouk] falado,raio,
-   771 atom [étâm] átomo,
-   772 human [rriumân] humano,
-   773 history [rrêstâri] história,
-   774 effect [êfect] efeito,
-   775 electric [êlektrêk] elétrico,
-   776 expect [ikspekt] esperar,
-   777 crop [crap] colheita,
-   778 modern [madârn] moderno,
-   779 element [elêmânt] elemento,
-   780 hit [rrêt] acertar,
-   781 student [stuudânt] estudante,
-   782 corner [córnâr] esquina,
-   783 party [party] partido,festa,
-   784 supply [sâplai] suprir,
-   785 bone [boun] osso,
-   786 rail [reil] grade,trilho,
-   787 imagine [êmédjân] imaginar,
-   788 provide [prâvaid] fornecer,
-   789 agree [âgrii] concordar,
-   790 thus [dhâs] assim,
-   791 capital [képêtâl] capital,
-   792 won't [uount] não-vai,
-   793 chair [tchér] cadeira,
-   794 danger [deindjâr] perigo,
-   795 fruit [fruut] fruta,
-   796 rich [rêtch] rico,
-   797 thick [thêk] grosso,
-   798 soldier [souldjãr] soldado,
-   799 process [prouces] processo,
-   800 operate [apâreit] operar,
-   801 guess [ghes] adivinhar,
-   802 necessary [nesâséri] necessário,
-   803 sharp [sharp] agudo,sustenido,
-   804 wing [uêng] asa,
-   805 create [crieit] criar,
-   806 neighbor [neibâr] vizinho,
-   807 wash [uósh] lavar,
-   808 bat [bét] morcego,bastão,
-   809 rather [raadhâr] de-preferência,
-   810 crowd [craud] multidão,
-   811 corn [córn] milho,
-   812 compare [câmpér] comparar,
-   813 poem [pouêm] poema,
-   814 string [strêng] corda,
-   815 bell [beól] sino,
-   816 depend [dêpend] depender,
-   817 meat [miit] carne,
-   818 rub [râb] esfregar,
-   819 tube [tuub] tubo,tv,
-   820 famous [feimâs] famoso,
-   821 tooth [tuuth] dente,
-   822 stream [striim] corrente,
-   823 fear [fiir] medo,temer,
-   824 beach [biitch] praia,
-   825 thin [thên] fino,magro,
-   826 triangle [traiéngâl] triângulo,
-   827 planet [plénât] planeta,
-   828 hurry [rrâri] pressa,
-   829 chief [chiif] chefe,
-   830 candle [kéndâl] vela,
-   831 clock [clak] relógio,
-   832 mine [main] meu,mina,
-   833 tie [tai] amarrar,
-   834 enter [enttâr] entrar,
-   835 major [meidjâr] maior,major,
-   836 fresh [fresh] fresco,
-   837 search [sârtch] buscar,
-   838 send [send] enviar,
-   839 yellow [yelou] amarelo,
-   840 gun [gân] arma,
-   840 rose [rouz] rosa,levantado,
-   841 allow [âlau] permitir,
-   842 print [prênt] imprimir,
-   843 dead [ded] morto,
-   844 spot [spat] ponto,
-   845 desert [dêzârt] deserto,
-   846 suit [suut] terno,
-   847 current [cârânt] atual,
-   848 lift [lêft] levantar,
-   850 continue [cântêniu] continuar,
-   851 block [blak] bloco,
-   852 chart [tchart] gráfico,
-   853 hat [rrét] chapéu,
-   854 sell [sel] vender,
-   855 success [sâkses] sucesso,
-   856 company [câmpâni] companhia,empresa,
-   857 subtract [sâbtréct] subtrair,
-   858 event [ivent] evento,
-   859 particular [partêkiâlar] especial,
-   860 deal [diil] negócio,
-   1006 maybe [meibii] talvez,
-   862 term [târm] termo,período,
-   863 opposite [apâzât] oposto,
-   864 wife [uaif] esposa,
-   865 shoe [shuu] sapato,
-   866 shoulder [shouldâr] ombro,
-   867 spread [spred] espalhar,
-   868 arrange [âreindj] arranjar,
-   869 camp [kémp] campo,
-   870 invent [ênvent] inventar,
-   871 cotton [catân] algodão,
-   872 born [bórn] nascido,
-   873 determine [dêtârmân] determinar,
-   874 quart [quórt] quarto(medida),
-   875 nine [nain] nove,
-   876 truck [trâk] caminhão,
-   877 noise [nóiz] barulho,
-   878 level [levâl] nível,
-   879 chance [tchéns] chance,acaso,
-   880 gather [ghédhâr] juntar,
-   881 shop [shap] loja,
-   882 stretch [stretch] alcance,
-   883 throw [throu] arremessar,
-   884 shine [shain] brilhar,
-   885 property [prapâtti] propriedade,
-   886 column [calâm] coluna,
-   887 molecule [malêkiul] molécula,
-   888 select [sêlect] selecionar,
-   889 wrong [róng] errado,
-   890 gray [grei] cinza,
-   891 repeat [rêpiit] repetir,
-   892 require [rêquair] exigir,
-   893 broad [bród] amplo,
-   894 prepare [prêpér] preparar,
-   895 salt [sólt] sal,
-   896 nose [nouz] nariz,
-   897 plural [plôrâl] plural,
-   898 anger [éngâr] raiva,
-   899 claim [cleim] clamar,
-   900 continent [cantânânt] continente,
-   901 oxygen [aksêdjân] oxigênio,
-   902 sugar [shuugâr] açúcar,
-   903 death [deth] morte,
-   904 pretty [prêti] belo,muito,
-   905 skill [skêl] habilidade,
-   906 women [uêmân] mulheres,
-   907 season [seezân] estação,
-   908 solution [sâlushân] solução,
-   909 magnet [mégnât] imã,
-   910 silver [sêlvãr] prata,
-   911 thank [thénk] agradecer,
-   912 branch [brénch] galho,
-   913 match [métch] competição,fósforo,
-   914 suffix [sâfêks] sufixo,
-   915 especially [êspeshâli] especialmente,
-   916 fig [fêg] figo,
-   917 afraid [âfreid] com-medo,
-   918 huge [rriudj] grande,enorme,
-   919 sister [sêstâr] irmã,
-   920 steel [stiil] aço,
-   921 discuss [dêscâs] discutir,
-   922 forward [fóruârd] adiante,passar adiante,
-   923 similar [sêmâlãr] semelhante,
-   924 guide [gaid] guia,guiar,
-   925 experience [êkspiiriâns] experiência,
-   926 score [scór] placar,duas-dezenas,
-   927 apple [épâl] maçã,
-   928 bought [bót] comprado,
-   929 led [led] levado,
-   930 colony [calâni] colonia,
-   931 coat [cout] casaco,
-   932 mass [més] massa,missa,
-   933 card [card] cartão,
-   934 band [bénd] banda,
-   935 rope [roup] corda,
-   936 slip [slêp] escorregar,
-   937 win [uên] ganhar,
-   938 dream [driim] sonho,
-   939 evening [iivnêng] noite,
-   940 condition [cândêshân] condição,
-   941 feed [fiid] alimentar,
-   942 tool [tuul] ferramenta,
-   943 total [toutãl] total,
-   944 basic [beisêk] básico,
-   945 smell [smel] cheiro,
-   946 valley [véli] vale,
-   947 nor [nór] nem,
-   948 double [dâbâl] dobro,
-   949 seat [siit] assento,
-   950 arrive [âraiv] chegar,
-   951 master [méstâr] mestre,
-   952 track [trék] trilha,
-   953 parent [pérânt] pais,
-   954 shore [shór] praia,
-   955 division [dêvêzhân] divisão,
-   956 sheet [shiit] folha,lençol,
-   957 substance [sâbstâns] substância,
-   958 favor [feivâr] favor,favorecer,
-   959 connect [cânect] conectar,
-   960 post [poast] pós,posto,
-   961 spend [spend] gastar,
-   962 swim [suêm] nadar,
-   963 chord [córd] acorde,
-   964 fat [fét] gordo,
-   965 glad [gléd] contente,
-   966 original [ârêdjânâl] original,
-   967 share [shér] parte,
-   968 station [steishân] estação,
-   969 dad [déd] papai,
-   970 bread [bréd] pão,
-   971 charge [chardj] carga,cobrança,
-   972 proper [prapâr] próprio,
-   973 bar [bar] bar,barra,
-   974 offer [afêr] oferecer,
-   975 segment [segmânt] segmento,
-   976 slave [sleiv] escravo,
-   977 duck [dâk] pato,mergulhar,
-   978 instant [ênstânt] instante,
-   979 market [markât] mercado,
-   980 degree [dêgrii] grau,
-   981 populate [papiâleit] povoar,
-   982 chick [tchêk] pintinho,
-   983 dear [diir] querido,
-   984 enemy [enâmi] inimigo,
-   985 reply [rêplai] resposta,
-   986 drink [drênk] bebida,
-   987 occur [âcâr] ocorrer,
-   988 support [sâpórt] apoiar,
-   989 speech [spiitch] discurso,
-   990 nature [neitchâr] natureza,
-   991 range [reindj] alcance,pastagem,
-   992 steam [stiim] vapor,
-   993 motion [moushân] movimento,
-   994 path [péth] caminho,
-   995 liquid [lêquâd] líquido,
-   996 log [lóg] lenha,diário,
-   997 meant [ment] significado,
-   998 quotient [quoshânt] quociente,
-   999 teeth [tiith] dentes,
-   1000 shell [shel] concha,
-   1001 neck [nek] pescoço,
-   1002 dessert [dêssârt] sobremesa,
-   1003 principal [prênsâpâl] principal,diretor,
-   1004 substantive [sâbstântiv] substantivo,
-   1005 standard [stándârd] padrão,
-  1006 dollar [dalâr] dólar,
-  1007 pitch [pêtch] piche,arremeço
+      const wordList = `ordem inglês pronúncia português
+the [dhâ] o,a,os,as
+of [âv] de
+to [tuu] para
+and [énd] e
+a [â] um,uma
+in [ên] em,dentro
+is [ês] é
+it [êt] este
+you [yuu] você
+that [dhét] que,aquele
+he [rrii] ele
+was [uós] era,estava
+for [fór] por,para
+on [ón] em
+are [ar] são,estão
+with [uêdh] com
+as [és] como,enquanto
+I [ai] eu
+his [rrês] seu
+they [dhei] eles
+be [bii] ser,estar
+at [ét] em
+one [uân] um
+have [rrév] ter
+this [dhês] este
+from [frâm] de
+or [ór] ou
+had [rréd] tinha
+by [bai] por,em
+hot [rrat] quente
+word [uâd] palavra
+but [bât] mas
+what [uót] o-que
+some [sâm] algum
+we [uii] nós
+can [kén] pode,lata
+out [aut] fora
+other [âdhâr] outro
+were [uâr] eram,esavam
+all [ól] todo
+there [thér] lá
+when [uen] quando
+up [âp] para-cima
+use [iuz] usar
+your [yór] seu
+how [rráu] como,quão
+said [séd] disse
+an [én] um,uma
+each [iich] cada
+she [shii] ela
+which [uêtch] qual
+do [duu] fazer,mesmo
+their [thér] seus
+time [taim] tempo,hora
+if [êf] se
+will [uêl] vai,vontade
+way [uei] caminho,jeito
+about [âbaut] sobre,quase
+many [méni] muitos
+then [dhên] então
+them [dhêm] deles
+write [rait] escrever
+would [uôd] deveria
+like [laik] como,gostar
+so [sôu] assim,tão
+these [dhiiz] estes
+her [rrâr] dela
+long [lóng] longo
+make [meik] fazer
+thing [thêng] coisa
+see [sii] ver
+him [rrêm] dele
+two [tuu] dois,duas
+has [rrés] tem
+look [lôk] olhar
+more [mór] mais
+day [dei] dia
+could [côd] poderia
+go [gôu] ir
+come [câm] vir
+did [dêd] fez,mesmo
+number [nâmbâr] número
+sound [saund] som
+no [nou] não
+most [moust] mais,maior
+people [piipâl] pessoas,povo
+my [mai] meu
+over [ouvâr] sobre,acima-de
+know [nou] saber
+water [uóttâr] água
+than [dhén] que
+call [cól] chamar
+first [fârst] primeiro
+who [rruu] que
+may [mei] maio,pode
+down [daun] baixo
+side [said] lado
+been [bên] sido,estado
+now [nau] agora
+find [faind] encontrar
+any [éni] qualquer
+new [nuu] novo
+work [uârk] trabalho
+part [part] parte
+take [teik] pegar
+get [ghét] ficar
+place [pleis] lugar
+made [meid] feito
+live [lêv,laiv] viver,vivo
+where [uér] onde
+after [éftâr] após
+back [bék] atrás,costas
+little [lêttâl] pequeno,pouco
+only [ounli] somente
+round [raund] redondo,rodada
+man [mén] homem
+year [yiir] ano
+came [keim] chegado
+show [shou] mostrar
+every [evri] cada
+good [gôd] bom
+me [mii] me,eu
+give [ghêv] dar
+our [ar] nosso
+under [ândâr] sob
+name [neim] nome
+very [véri] muito,absoluto
+through [thruu] através-de
+just [jâst] justo,só
+form [fórm] forma,formulário
+sentence [sêntâns] sentença
+great [greit] grande
+think [thênk] pensar
+say [sei] dizer
+help [rrêlp] ajudar
+low [lou] baixo
+line [lain] linha,fila
+differ [dêfâr] diferir
+turn [târn] tornar,vez
+cause [cóz] causa
+much [mâtch] muito
+mean [miin] meio,significar
+before [bêfór] antes
+move [muuv] movimento
+right [rait] direito
+boy [bói] garoto
+old [ould] velho
+too [tuu] também
+same [seim] mesmo
+tell [têl] contar
+does [dâz] faz,mesmo
+set [sêt] conjunto,fixar
+three [thrii] três
+want [uânt] querer
+air [ér] ar
+well [uel] bem,poço
+also [ólsou] também
+play [plei] peça,tocar
+small [smól] pequeno
+end [ênd] fim,finalizar
+put [pôt] por
+home [rroum] casa
+read [riid] ler,lido
+hand [rrénd] mão
+port [pórt] porto
+large [larj] grande
+spell [spêl] soletrar,encanto
+add [éd] adicionar
+even [iivân] mesmo
+land [lénd] terra
+here [rriir] aqui
+must [mâst] dever
+big [bêg] grande
+high [rrai] alto
+such [sâtch] tal
+follow [falou] seguir
+act [ékt] ato,agir
+why [uai] por-que
+ask [ésk] pedir,perguntar
+men [mên] homens
+change [tcheinj] mudar
+went [uent] foi
+light [lait] leve,luz
+kind [kaind] bom,tipo
+off [óf] por,desligado
+need [niid] precisar
+house [rraus] casa
+picture [pêktchâr] foto,filme
+try [trai] tentar
+us [âs] nos
+again [âghein] de-novo
+animal [énâmâl] animal
+point [point] ponto
+mother [mâdhâr] mãe
+world [uârld] mundo
+near [niir] perto
+build [bêld] construir
+self [self] próprio,ego
+earth [ârth] terra
+father [fódhâr] pai
+head [rred] cabeça
+stand [sténd] permanecer,de-pé,banca
+own [oun] próprio
+page [peij] página
+should [shôd] deveria
+country [cântri] país
+found [faund] encontrado,fundar
+answer [énsâr] resposta
+school [skool] escola
+grow [grou] crescer
+study [stâdi] estudo
+still [stêl] até,calmo
+learn [lârn] aprender
+plant [plént] planta,fábrica
+cover [câvâr] cobrir
+food [fuud] comida
+sun [sân] sol
+four [fór] quatro
+between [bituiin] entre
+state [steit] estado
+keep [kiip] guardar
+eye [ai] olho
+never [nevâr] nunca
+last [lést] último,durar
+let [let] deixar
+thought [thót] pensamento,pensado
+city [cêtti] cidade
+tree [trii] árvore
+cross [crós] cruz,cruzar
+farm [farm] fazenda
+hard [rrard] duro
+start [start] começar
+might [mait] poder,poderia
+story [stóri] estória,andar(prédio)
+saw [só] viu,serra
+far [far] longe
+sea [sii] mar
+draw [dró] arrastar,empate
+left [left] esquerda,deixado
+late [leit] tarde
+run [rân] correr
+don't [dount] não
+while [uail] enquanto
+press [pres] pressão,imprensa
+close [clous] fechar
+night [nait] noite
+real [riil] real
+life [laif] vida
+few [fiu] alguns
+north [nórth] norte
+open [oupân] aberto
+seem [siim] parecer
+together [tâghedhâr] juntos
+next [next] próximo
+white [uait] branco
+children [tchêldrân] crianças
+begin [bêghên] começar
+got [gat] ficado
+walk [uók] andar
+example [igzémpâl] exemplo
+ease [iiz] facilitar
+paper [peipâr] papel
+group [grup] grupo
+always [óluêz] sempre
+music [miuzêk] música
+those [dhouz] aqueles
+both [bouth] ambos
+mark [mark] marcar
+often [ófân] muitas-vezes
+letter [lettâr] letra,carta
+until [ântêl] até
+mile [mail] milha
+river [rêvâr] rio
+car [car] carro
+feet [fiit] pés
+care [kér] cuidado
+second [secând] segundo
+book [bôk] livro
+carry [kéri] carregar
+took [tôk] pego
+science [sains] ciência
+eat [iit] comer
+room [ruum] cômodo,quarto
+friend [frend] amigo
+began [bêgén] começado
+idea [aidiia] idéia
+fish [fêsh] peixe,pescar
+mountain [mauntân] montanha
+stop [stap] parar
+once [uâns] uma-vez
+base [beis] base
+hear [rriir] ouvir
+horse [rrórs] cavalo
+cut [cât] cortar
+sure [shôr] certo
+watch [uótch] assistir,relógio
+color [câlâr] cor,colorir
+face [feis] rosto
+wood [uôd] madeira
+main [mein] principal
+enough [inâf] bastante
+plain [plein] plano,simples
+girl [gârl] garota
+usual [iuzhuâl] usual,comum
+young [yâng] jovem
+ready [riidi] pronto
+above [âbâv] acima
+ever [evâr] sempre,já
+red [red] vermelho
+list [lêst] lista
+though [thou] apesar-de
+feel [fiiól] sentir,sentimendo
+talk [tók] conversar
+bird [bârd] pássaro
+soon [suun] logo
+body [baddi] corpo
+dog [dóg] cachorro
+family [fémâli] família
+direct [dârekt] direto
+pose [pouz] posição
+leave [liiv] deixar
+song [sóng] canção
+measure [mejâr] medida
+door [dór] porta
+product [pradâkt] produto
+black [blék] negro
+short [shórt] curto
+numeral [nuumârâl] numeral
+class [clés] classe
+wind [uênd] vento
+question [quéschân] questão,pergunta
+happen [rrépân] acontecer
+complete [câmpliit] completo
+ship [shêp] navio,embarcar
+area [ériiâ] área
+half [rréf] metade
+rock [rak] roque,rocha
+order [órdâr] ordem,pedido
+fire [fair] fogo,incêndio,despedir
+south [sauth] sul
+problem [prablâm] problema
+piece [piis] peça,pedaço
+told [tould] contado
+knew [nuu] sabido
+pass [pés] passar
+since [sêns] desde
+top [tap] topo,principal
+whole [rroul] inteiro
+king [kêng] rei
+space [speis] espaço
+heard [rrârd] ouvido
+best [best] melhor
+hour [aur] hora
+better [bettâr] melhor
+true [truu] verdadeiro
+during [duurêng] durante
+hundred [rrândrâd] cem
+five [faiv] cinco
+remember [rimembâr] lembrar
+step [step] passo
+early [ârli] cedo
+hold [rrould] guardar
+west [uest] oeste
+ground [graund] terra,amolado
+interest [êntrâst] interesse,juros
+reach [riitch] alcançar
+fast [fést] rápido
+verb [vârb] verbo
+sing [sêng] cantar
+listen [lêssân] ouvir
+six [sêks] seis
+table [teibâl] mesa,tabela
+travel [trévâl] viajar
+less [les] menos
+morning [mórnên] manhã
+ten [ten] dez
+simple [sêmpâl] simples
+several [sevrâl] vários
+vowel [vaul] vogal
+toward [tuuard] para
+war [uar] guerra
+lay [lei] deitar,amador
+against [âghenst] contra
+pattern [péttârn] padrão
+slow [slou] devagar
+center [centâr] centro
+love [lâv] amor,amar
+person [pârsân] pessoa
+money [mâni] dinheiro
+serve [sârv] servir
+appear [âpiir] aparecer
+road [roud] estrada
+map [mép] mapa
+rain [rein] chuva
+rule [ruul] régua,regra
+govern [gâvârn] governar
+pull [pôl] puxar
+cold [could] frio
+notice [nottâs] aviso
+voice [vois] voz
+unit [iunât] unidade
+power [pauâr] poder,força
+town [taun] municipal
+fine [fain] bom,excelente
+certain [sârtân] certo
+fly [flai] voar,mosca
+fall [fól] cair,queda,outono
+lead [liid] levar,chumbo
+cry [crai] choro,chorar
+dark [dark] escuro
+machine [mâshiin] máquina
+note [nout] anotar
+wait [ueit] esperar
+plan [plén] plano
+figure [fêghiâr] figura,imaginar
+star [star] estrela
+box [baks] caixa
+noun [naun] substantivo
+field [fiild] campo
+rest [rest] resto,descanso
+correct [cârekt] correto
+able [eibâl] capaz
+pound [paund] libra
+done [dân] feito
+beauty [biutti] beleza
+drive [draiv] direção,dirigir
+stood [stud] permanecido
+contain [cântein] conter
+front [frânt] frente
+teach [tiitch] ensinar
+week [uiik] semana
+final [fainâl] final
+gave [gheiv] dado
+green [griin] verde
+oh [ou] ó
+quick [quêk] rápido
+develop [dêvelâp] desenvolver
+ocean [oushân] oceano
+warm [uórm] quente
+free [frii] livre,grátis
+minute [mênât] minuto
+strong [stróng] forte
+special [speshâl] especial
+mind [maind] mente,importar-se
+behind [bêrraind] atrás
+clear [cliir] claro
+tail [teil] rabo
+produce [prâdus] produção
+fact [fékt] fato
+street [striit] rua
+inch [êntch] polegada
+multiply [mâltâplai] multiplicar
+nothing [nâthêng] nada
+course [córs] curso
+stay [stei] ficar
+wheel [uiil] roda
+full [fôl] cheio
+force [fórs] força,forçar
+blue [bluu] azul
+object [âbjêkt] objeto
+decide [dêsaid] decidir
+surface [sârfâs] superficie
+deep [diip] profundo
+moon [muun] lua
+island [ailând] ilha
+foot [fuut] pé
+system [sêstâm] sistema
+busy [bêzi] ocupado
+test [test] teste
+record [recârd] recorde,gravar,registro
+boat [bout] barco
+common [camân] comum
+gold [gould] ouro
+possible [pasâbâl] possível
+plane [plein] avião
+stead [sted] local
+dry [drai] seco
+wonder [uândâr] admirar
+laugh [léf] rir
+thousand [thauzând] mil
+ago [âgou] atrás
+ran [rén] corrido
+check [tchek] cheque,checagem
+game [gheim] jogo
+shape [sheip] forma
+equate [iiqueit] equacionar
+sight [sait] visão
+miss [mês] sentir,senhorita
+brought [brót] trazido
+heat [rriit] calor
+snow [snou] neve
+tire [tair] pneu,cansar
+bring [brêng] trazer
+yes [yes] sim
+distant [dêstânt] distante
+fill [fêl] encher
+east [iist] leste
+paint [peint] pintar
+language [lénguêj] língua
+among [âmâng] entre
+grand [grénd] grandioso
+ball [ból] bola
+yet [yet] ainda,já
+wave [ueiv] onda
+drop [drap] gota
+heart [rrórt] coração
+am [ém] sou,estou
+present [prezânt] presente
+heavy [rrevi] pesado
+dance [déns] dança
+engine [enjân] motor
+position [pâzêshãn] posição
+arm [arm] braço
+wide [uaid] amplo
+sail [seil] vela(navio)
+material [mâtiiriâl] material
+size [saiz] tamanho
+vary [véri] variar
+settle [settâl] estabelecer
+speak [spiik] falar
+weight [ueit] peso
+general [jenral] general,geral
+ice [ais] gelo
+matter [méttâr] matéria,importar-se
+circle [sârkâl] círculo
+pair [pér] par
+include [ênclud] incluir
+divide [dêvaid] dividir
+syllable [sêlâbâl] sílaba
+felt [feólt] sentido
+perhaps [pârhépps] talvez
+pick [pêk] escolher,apanhar
+sudden [sâdân] imprevisto
+count [caunt] contar,contagem,conde
+square [squér] quadrado,praça
+reason [riizân] razão
+length [lenth] comprimento
+represent [reprêzent] representar
+art [art] arte
+subject [sâbjêkt] sujeito,assunto
+region [riijân] região
+energy [enârji] energia
+hunt [rrânt] caçar
+probable [prabâbâl] provável
+bed [bed] cama
+brother [brâdhâr] irmão
+egg [eg] ovo
+ride [raid] passeio
+cell [ceól] cela,célula
+believe [bêliiv] acreditar
+fraction [frécshân] fração
+forest [fórâst] floresta
+sit [sêt] sentar
+race [reis] raça,corrida
+window [uêndou] janela
+store [stór] armazém
+summer [sâmâr] verão
+train [trêin] trem,treinar
+sleep [sliip] dormir
+prove [pruuv] provar
+lone [loun] só
+leg [leg] perna
+exercise [eksârsaiz] exercício
+wall [uól] parede
+catch [kétch] pegar
+mount [maunt] monte,montar
+wish [uêsh] desejo
+sky [skai] céu
+board [bórd] quadro
+joy [jói] alegria
+winter [uênttâr] inverno
+sat [sét] sentado
+written [rêtân] escrito
+wild [uaild] selvagem
+instrument [ênstrâmânt] instrumento
+kept [kept] guardado
+glass [glés] vidro
+grass [grés] grama
+cow [cau] vaca
+job [jáb] trabalho,jó
+edge [ej] canto
+sign [sain] sinal
+visit [vêzât] visita
+past [pést] passado
+soft [saft] macio
+fun [fân] alegria
+bright [brait] claro
+gas [ghés] gás,gasolina
+weather [uedhâr] tempo
+month [mânt] mês
+million [mêliân] milhão
+bear [bér] urso,carregar
+finish [fênish] fim,finalizar
+happy [rrépi] feliz
+hope [rroup] esperança
+flower [flauâr] flor
+clothe [cloudh] vestir
+strange [streindj] estranho
+gone [gón] ido
+jump [jâmp] pular
+baby [beibi] bebê
+eight [eit] oito
+village [vêlâj] vila
+meet [miit] encontrar
+root [ruut] raiz
+buy [bai] comprar
+raise [reiz] levantar
+solve [soulv] resolver
+metal [mettâl] metal
+whether [uedhâr] se
+push [pôsh] empurrar,iniciativa
+seven [sevân] sete
+paragraph [pérâgréf] parágrafo
+third [thârd] terceiro
+shall [shél] vai
+held [rreld] guardado
+hair [rrér] cabelo
+describe [dêcraib] descrever
+cook [côk] cozinhar
+floor [flór] chão,derrotar
+either [aidhâr] um, ou outro, também
+result [rêzâlt] resultado
+burn [bârn] queimar
+hill [rrêl] colina
+safe [seif] seguro,cofre
+cat [két] gato
+century [centri] século
+consider [cânsêdâr] considerar
+type [taip] tipo,datilografar
+law [ló] lei
+bit [bêt] pouco,broca
+coast [coust] costa,litoral
+copy [capi] copiar
+phrase [freiz] frase
+silent [sailânt] silencio
+tall [tól] alto(pessoa)
+sand [sénd] areia
+soil [sóil] solo
+roll [rôl] giro,lista
+temperature [temprâchâr] temperatura
+finger [fêngâr] dedo
+industry [êndâstri] indústria
+value [véliu] valor
+fight [fait] luta
+lie [lai] deitar,mentir
+beat [biit] bater
+excite [iksait] instigar
+natural [nétchârâl] natural
+view [viu] vista
+sense [sens] sentido
+ear [iir] orelha,espiga
+else [els] outro
+quite [quait] muito
+broke [brouk] quebrado
+case [keis] caso,embalagem
+middle [mêdâl] meio
+kill [kêl] matar
+son [sân] filho
+lake [leik] lago
+moment [moumânt] momento
+scale [skeil] escada,escala,escama
+loud [laud] alto(som)
+spring [sprêng] primavera,mola
+observe [âbzârv] observar
+child [tchaild] criança
+straight [streit] reto
+consonant [cansânânt] consoante
+nation [neishân] nação
+dictionary [dêkshânâri] dicionário
+milk [mêlk] leite
+speed [spiid] velocidade
+method [méthâd] método
+organ [órgân] órgão
+pay [pei] pagar
+age [eij] idade
+section [sekshân] seção
+dress [dres] vestido
+cloud [claud] nuvem
+surprise [sârpraiz] surpresa
+quiet [quait] quieto
+stone [stoun] pedra
+tiny [taini] minúsculo
+climb [claim] escalar
+cool [cuul] frio
+design [dêzain] desenho
+poor [pôr] pobre
+lot [lót] muito,lote
+experiment [eksperâmânt] experimento
+bottom [battâm] baixo
+key [kii] chave
+iron [airn] ferro
+single [sêngâl] só,solteiro
+stick [stêk] vareta,fincar
+flat [flét] achatado,plano
+twenty [tuenti] vinte
+skin [skên] pele
+smile [smail] sorriso
+crease [criis] ruga
+hole [rroul] buraco
+trade [treid] comércio
+melody [melâdi] melodia
+trip [trêp] viajar,passeio
+office [afâs] escritório,função
+receive [riciiv] receber
+row [rou] remar,fila
+mouth [mauth] boca
+exact [igzéct] exato
+symbol [sêmbâl] símbol
+die [dai] morrer
+least [liist] menos
+trouble [trâbâl] preocupação
+shout [shaut] gritar
+except [êkscept] exceto
+wrote [rout] escrito
+seed [siid] semente
+tone [toun] tom
+join [join] juntar
+suggest [sâgjest] sugerir
+clean [cliin] limpo
+break [breik] quebrar
+lady [leidi] dama
+yard [yard] jarda,quintal
+rise [raiz] levantar
+bad [béd] mal
+blow [blou] assoprar
+oil [oil] óleo,petróleo
+blood [blâd] sangue
+touch [tâtch] tocar
+grew [gruu] crescido
+cent [cent] centavo
+mix [mêks] mistura
+team [tiim] grupo
+wire [uair] arame
+cost [cóst] custo
+lost [lóst] perdido
+brown [braun] marrom
+wear [uér] usar
+garden [gardân] jardim
+equal [iiquâl] igual
+sent [sent] enviado
+choose [tchuuz] escolher
+fell [fel] caido
+fit [fêt] ajustado
+flow [flou] correr,corrente
+fair [fér] feira,claro
+bank [bénk] banco
+collect [câlect] recolher,pagar
+save [seiv] salvar
+control [cântroul] controle
+decimal [dêsêmâl] decimal
+gentle [jentâl] gentil
+woman [uômân] mulher
+captain [képtân] capitão
+practice [précttâs] prática
+separate [sepârât] separado
+difficult [dêfêcâlt] difícil
+doctor [dactâr] doutor
+please [pliiz] por-favor,agradar
+protect [prâtect] proteger
+noon [nuun] meio-dia
+whose [rruuz] cujo
+locate [loukeit] localizar
+ring [rêng] anel,tocar
+character [kérêktâr] caráter,personagem
+insect [ênsect] inseto
+caught [cót] pego
+period [pêriiâd] período
+indicate [êndêkeit] indicar
+radio [reidiiou] rádio
+spoke [spouk] falado,raio
+atom [étâm] átomo
+human [rriumân] humano
+history [rrêstâri] história
+effect [êfect] efeito
+electric [êlektrêk] elétrico
+expect [ikspekt] esperar
+crop [crap] colheita
+modern [madârn] moderno
+element [elêmânt] elemento
+hit [rrêt] acertar
+student [stuudânt] estudante
+corner [córnâr] esquina
+party [party] partido,festa
+supply [sâplai] suprir
+bone [boun] osso
+rail [reil] grade,trilho
+imagine [êmédjân] imaginar
+provide [prâvaid] fornecer
+agree [âgrii] concordar
+thus [dhâs] assim
+capital [képêtâl] capital
+won't [uount] não-vai
+chair [tchér] cadeira
+danger [deindjâr] perigo
+fruit [fruut] fruta
+rich [rêtch] rico
+thick [thêk] grosso
+soldier [souldjãr] soldado
+process [prouces] processo
+operate [apâreit] operar
+guess [ghes] adivinhar
+necessary [nesâséri] necessário
+sharp [sharp] agudo,sustenido
+wing [uêng] asa
+create [crieit] criar
+neighbor [neibâr] vizinho
+wash [uósh] lavar
+bat [bét] morcego,bastão
+rather [raadhâr] de-preferência
+crowd [craud] multidão
+corn [córn] milho
+compare [câmpér] comparar
+poem [pouêm] poema
+string [strêng] corda
+bell [beól] sino
+depend [dêpend] depender
+meat [miit] carne
+rub [râb] esfregar
+tube [tuub] tubo,tv
+famous [feimâs] famoso
+tooth [tuuth] dente
+stream [striim] corrente
+fear [fiir] medo,temer
+beach [biitch] praia
+thin [thên] fino,magro
+triangle [traiéngâl] triângulo
+planet [plénât] planeta
+hurry [rrâri] pressa
+chief [chiif] chefe
+candle [kéndâl] vela
+clock [clak] relógio
+mine [main] meu,mina
+tie [tai] amarrar
+enter [enttâr] entrar
+major [meidjâr] maior,major
+fresh [fresh] fresco
+search [sârtch] buscar
+send [send] enviar
+yellow [yelou] amarelo
+gun [gân] arma
+rose [rouz] rosa,levantado
+allow [âlau] permitir
+print [prênt] imprimir
+dead [ded] morto
+spot [spat] ponto
+desert [dêzârt] deserto
+suit [suut] terno
+current [cârânt] atual
+lift [lêft] levantar
+continue [cântêniu] continuar
+block [blak] bloco
+chart [tchart] gráfico
+hat [rrét] chapéu
+sell [sel] vender
+success [sâkses] sucesso
+company [câmpâni] companhia,empresa
+subtract [sâbtréct] subtrair
+event [ivent] evento
+particular [partêkiâlar] especial
+deal [diil] negócio
+ maybe [meibii] talvez
+term [târm] termo,período
+opposite [apâzât] oposto
+wife [uaif] esposa
+shoe [shuu] sapato
+shoulder [shouldâr] ombro
+spread [spred] espalhar
+arrange [âreindj] arranjar
+camp [kémp] campo
+invent [ênvent] inventar
+cotton [catân] algodão
+born [bórn] nascido
+determine [dêtârmân] determinar
+quart [quórt] quarto(medida)
+nine [nain] nove
+truck [trâk] caminhão
+noise [nóiz] barulho
+level [levâl] nível
+chance [tchéns] chance,acaso
+gather [ghédhâr] juntar
+shop [shap] loja
+stretch [stretch] alcance
+throw [throu] arremessar
+shine [shain] brilhar
+property [prapâtti] propriedade
+column [calâm] coluna
+molecule [malêkiul] molécula
+select [sêlect] selecionar
+wrong [róng] errado
+gray [grei] cinza
+repeat [rêpiit] repetir
+require [rêquair] exigir
+broad [bród] amplo
+prepare [prêpér] preparar
+salt [sólt] sal
+nose [nouz] nariz
+plural [plôrâl] plural
+anger [éngâr] raiva
+claim [cleim] clamar
+continent [cantânânt] continente
+oxygen [aksêdjân] oxigênio
+sugar [shuugâr] açúcar
+death [deth] morte
+pretty [prêti] belo,muito
+skill [skêl] habilidade
+women [uêmân] mulheres
+season [seezân] estação
+solution [sâlushân] solução
+magnet [mégnât] imã
+silver [sêlvãr] prata
+thank [thénk] agradecer
+branch [brénch] galho
+match [métch] competição,fósforo
+suffix [sâfêks] sufixo
+especially [êspeshâli] especialmente
+fig [fêg] figo
+afraid [âfreid] com-medo
+huge [rriudj] grande,enorme
+sister [sêstâr] irmã
+steel [stiil] aço
+discuss [dêscâs] discutir
+forward [fóruârd] adiante,passar adiante
+similar [sêmâlãr] semelhante
+guide [gaid] guia,guiar
+experience [êkspiiriâns] experiência
+score [scór] placar,duas-dezenas
+apple [épâl] maçã
+bought [bót] comprado
+led [led] levado
+colony [calâni] colonia
+coat [cout] casaco
+mass [més] massa,missa
+card [card] cartão
+band [bénd] banda
+rope [roup] corda
+slip [slêp] escorregar
+win [uên] ganhar
+dream [driim] sonho
+evening [iivnêng] noite
+condition [cândêshân] condição
+feed [fiid] alimentar
+tool [tuul] ferramenta
+total [toutãl] total
+basic [beisêk] básico
+smell [smel] cheiro
+valley [véli] vale
+nor [nór] nem
+double [dâbâl] dobro
+seat [siit] assento
+arrive [âraiv] chegar
+master [méstâr] mestre
+track [trék] trilha
+parent [pérânt] pais
+shore [shór] praia
+division [dêvêzhân] divisão
+sheet [shiit] folha,lençol
+substance [sâbstâns] substância
+favor [feivâr] favor,favorecer
+connect [cânect] conectar
+post [poast] pós,posto
+spend [spend] gastar
+swim [suêm] nadar
+chord [córd] acorde
+fat [fét] gordo
+glad [gléd] contente
+original [ârêdjânâl] original
+share [shér] parte
+station [steishân] estação
+dad [déd] papai
+bread [bréd] pão
+charge [chardj] carga,cobrança
+proper [prapâr] próprio
+bar [bar] bar,barra
+offer [afêr] oferecer
+segment [segmânt] segmento
+slave [sleiv] escravo
+duck [dâk] pato,mergulhar
+instant [ênstânt] instante
+market [markât] mercado
+degree [dêgrii] grau
+populate [papiâleit] povoar
+chick [tchêk] pintinho
+dear [diir] querido
+enemy [enâmi] inimigo
+reply [rêplai] resposta
+drink [drênk] bebida
+occur [âcâr] ocorrer
+support [sâpórt] apoiar
+speech [spiitch] discurso
+nature [neitchâr] natureza
+range [reindj] alcance,pastagem
+steam [stiim] vapor
+motion [moushân] movimento
+path [péth] caminho
+liquid [lêquâd] líquido
+log [lóg] lenha,diário
+meant [ment] significado
+quotient [quoshânt] quociente
+teeth [tiith] dentes
+ shell [shel] concha
+ neck [nek] pescoço
+ dessert [dêssârt] sobremesa
+ principal [prênsâpâl] principal,diretor
+ substantive [sâbstântiv] substantivo
+ standard [stándârd] padrão
+ dollar [dalâr] dólar
+ pitch [pêtch] piche,arremeço
+ sunny [sani] ensolarado
+ rainy [reini] chuvoso
+ cloudy [claudi] nublado
+ windy [uindi] com vento
 `
-        .split(",\n")
+        .split("\n")
         .map((value) => value.trim());
-
-      const slicedList = wordList.slice(4);
-      console.log(slicedList);
 
       //Element selectors
       const searchBtn = document.querySelector(".btn");
@@ -1131,15 +1118,22 @@
       const resultLabel = document.querySelector(".form-control-label");
       const textResult = document.querySelector("#result-form1-1");
 
+      //Event handlers
       searchBtn.addEventListener("click", function (e) {
         e.preventDefault();
-        const word = wordInput.value;
-        const searchResult = wordList.find(
-          (line) => line.includes(`${word}`) && line
+        const word = wordInput.value.toLowerCase();
+        const searchResult = wordList.find((line) =>
+          line.includes(`${word + " "}`)
         );
-        if (searchResult) {
-          resultLabel.textContent = `Result: ${searchResult}`;
-          // wordList.forEach((line) => (result.value = ` ${line}`));
+        if (word) {
+          // resultLabel.textContent = `Result: ${searchResult}`;
+          const resultStringSplited = searchResult.split(" ");
+          console.log(resultStringSplited);
+
+          textResult.value = resultStringSplited.reduce(
+            (acc, value, i, array) =>
+              `Word: ${array[0]}\nPronunciation: ${array[1]}\nTranslation: ${array[2]}`
+          );
         }
       });
     </script>
